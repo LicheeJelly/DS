@@ -21,3 +21,4 @@ galton_heights <- GaltonFamilies %>%
                         rss = sapply(beta1, rss, beta0 = 25))
   results %>% ggplot(aes(beta1, rss)) +  
     geom_line(aes(beta1, rss))
+  
